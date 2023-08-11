@@ -6,7 +6,7 @@ const Login = () => {
   const [name, setName] = useState('');
   const [unitprice, setUnitprice] = useState('');
   const [unitsinstock, setUnitsinstock] = useState('');
-  const [inputColor, setInputColor] = useState('black'); // State for input color
+  const [inputColor, setInputColor] = useState('black'); 
 
   const onChangeName = (text) => {
     setName(text);
@@ -17,7 +17,7 @@ const Login = () => {
     const newInputColor = inputValue > 50 ? 'red' : 'black';
 
     setUnitprice(text);
-    setInputColor(newInputColor); // Update input color
+    setInputColor(newInputColor); 
   };
 
   const onChangeUnitsinstock = (text) => {
@@ -52,7 +52,7 @@ const Login = () => {
         placeholder="Name: "
       />
       <TextInput
-        style={[styles.input, { borderColor: inputColor }]} // Apply color to border
+        style={[styles.input, { borderColor: inputColor }]}
         onChangeText={onChangeUnitprice}
         value={unitprice}
         placeholder="Unit Price: "
