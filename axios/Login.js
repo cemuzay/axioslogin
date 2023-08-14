@@ -37,14 +37,17 @@ const Login = () => {
       setName('');
       setUnitprice('');
       setUnitsinstock('');
-      setInputColor('black'); // Reset the input color after submission
+      setInputColor('black'); 
     } catch (error) {
       console.error('Error sending data:', error);
     }
   };
 
   return (
-    <SafeAreaView>
+    <SafeAreaView >
+      <View style={styles.container}>
+
+     
       <TextInput
         style={[styles.input]} 
         onChangeText={onChangeName}
@@ -66,6 +69,7 @@ const Login = () => {
         keyboardType="numeric"
       />
       <Button title="Add" onPress={handleAddButton} />
+      </View>
     </SafeAreaView>
   );
 };
@@ -76,6 +80,7 @@ const styles = StyleSheet.create({
     margin: 12,
     borderWidth: 1,
     padding: 10,
+    backgroundColor:"lightyellow",
   },
 });
 
