@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Product from './axios/Product';
 import Login from './axios/Login';
 export default function App() {
-  return <Login/>
-
+  return (
+  
+    <SafeAreaView>
+      <Login/>
+      <Product/>
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
