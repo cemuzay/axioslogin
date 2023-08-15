@@ -6,6 +6,7 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
+    // Fetch data when the component mounts
     axios.get('https://northwind.vercel.app/api/products')
       .then(response => {
         setProducts(response.data);
