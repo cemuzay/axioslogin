@@ -68,7 +68,7 @@ const Login = () => {
         placeholder="Units in Stock: "
         keyboardType="numeric"
       />
-      <Button title="Add" onPress={handleAddButton} />
+      <Button title="name" onPress={handleAddButton} />
       </View>
     </SafeAreaView>
   );
